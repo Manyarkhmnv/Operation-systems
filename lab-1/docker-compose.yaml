@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  lab-1:
+    build: .
+    image: lab-1
+    tty: true
+    platform: linux/amd64
+    volumes:
+      - ./scripts:/home/user/lab-1/scripts
